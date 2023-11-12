@@ -91,7 +91,11 @@ main {
     /* Make main element take up surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    /* This will allow flexbox child properties to be used in the signup page without changing the existing layout on the other pages. */
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Hero Section */
 #hero {
@@ -192,6 +196,15 @@ main {
 
 #photos {
     line-height: 0;
+}
+
+/* Signup Page */
+#signup {
+    background-image: url("../images/signup-image.webp");
+    background-position: 75%;
+    background-size: cover;
+    flex-grow: 1;
+    padding: 20px 10%;
 }
 
 /* Footer */
