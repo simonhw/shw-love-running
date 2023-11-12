@@ -160,6 +160,24 @@ main {
     display: flex;
     background: url("../images/dublin-city.webp") no-repeat center/cover;
     flex-wrap: wrap;
+    text-align: center;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    /* This will not wrap on screens <400px wide. 
+    Each div will expand to fill available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Create the effect of a grid of meetup times over the bkg image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /* Overrides the general styles set above for h3 */
+    color: #fafafa;
 }
 
 /* Footer */
